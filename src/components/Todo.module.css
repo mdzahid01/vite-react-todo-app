@@ -1,0 +1,89 @@
+
+
+li{
+    list-style: none;
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 5px;
+    background-color: rgba( 255, 255, 255, 0.55 );
+    border-radius: 5px;
+}
+
+/* Hide the default checkbox */
+input[type="checkbox"] {
+    display: none;
+}
+
+label {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-color: rgb(239, 88, 24);
+    border-radius: 50%; /* Makes the checkbox rounded */
+    cursor: pointer;
+    position: relative;
+    margin-right: 15px;
+    transition: background-color 0.3s;
+}
+
+label:hover{
+    background-color: rgb(186, 56, 0);
+}
+
+/* Custom checked state */
+input[type="checkbox"]:checked + label {
+    background-color: rgb(50, 255, 22);
+    transition: background-color 0.3s;
+}
+
+/* Custom checkbox indicator (checkmark) */
+input[type="checkbox"]:checked + label::after {
+    content: "✔";
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    /* background-color: white; */
+    border-radius: 50%;
+    transform: translate(-60%, -55%);
+}
+
+p,.editInput{
+    flex: 4;
+    text-align: left;
+    /* padding-left: 5px; */
+}
+
+  
+.completed {
+    text-decoration: line-through;
+    color: #6e6a6a;
+}
+
+.editBtn{
+    flex: 2;
+    color: green;
+    font-size: 20px;
+}
+
+.deleteBtn{
+    flex: 2;
+    color: red;
+    font-size: 20px;
+}
+
+.editInput {
+    font-size: 16px;
+    box-sizing: border-box;
+    background-color: transparent;
+    border: none;
+    outline: none;
+}
+  
+  .completed {
+    text-decoration: line-through;
+    color: gray;
+  }

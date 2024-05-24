@@ -1,0 +1,50 @@
+:root {
+  margin: 0;
+  padding: 0;
+}
+*{
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+/* Scrollbar Track */
+::-webkit-scrollbar {
+  width: 10px; /* Width of the scrollbar */
+  background-color: rgba(255, 255, 255, 0.55); /* Background color with transparency */
+  border-radius: 10px; /* Border radius to match the glassmorphism effect */
+}
+
+/* Scrollbar Thumb */
+::-webkit-scrollbar-thumb {
+  background-color: rgba(31, 38, 135, 0.37); /* Color of the scrollbar thumb */
+  border-radius: 10px; /* Border radius to match the glassmorphism effect */
+  box-shadow: 0 0 10px rgba(31, 38, 135, 0.5); /* Box shadow for the thumb */
+}
+
+/* Optionally, you can style the scrollbar track on hover */
+::-webkit-scrollbar:hover {
+  background-color: rgba(255, 255, 255, 0.75); /* Adjusted background color on hover */
+}
+
+/* Optionally, you can style the scrollbar thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(31, 38, 135, 0.5); /* Adjusted color on hover */
+}
+
+
+
+::selection {
+ background-color: red;
+  color: white; /* Text color for the selected text */
+}
+
+body{
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+#root {
+  display: grid;
+  place-items: center;
+  padding-top: 30px;
+}
+
